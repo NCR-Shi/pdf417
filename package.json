@@ -1,12 +1,34 @@
 {
   "name": "pdf417",
-  "version": "0.0.8",
-  "description": "raw data for generating PDF417 format barcode",
-  "main": "/src/main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "keywords": [
+    "react",
+    "barcode",
+    "pdf417"
+  ],
+  "version": "0.1.2",
+  "description": "Barcode generator in PDF417 format.",
+  "homepage": "https://github.com/NCR-Shi/pdf417",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:NCR-Shi/pdf417.git"
   },
-  "author": "",
+  "main": "/build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "NCR-Shi",
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "pdf417": "0.0.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "webpack": "2.6.1"
+  }
 }

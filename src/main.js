@@ -7,8 +7,11 @@ function drawBarcode(canvas, barcodeMatrix, blockWidth, blockHeight) {
     let positionX = 0;
     for (let col = 0; col < barcodeMatrix.num_cols; col += 1) {
       if (barcodeMatrix.bcode[row][col] === '1') {
-        ctx.fillRect(positionX, positionY, blockWidth, blockHeight);
+        ctx.fillStyle = '#000';
+      } else {
+        ctx.fillStyle = '#FFF';
       }
+      ctx.fillRect(positionX, positionY, blockWidth, blockHeight);
       positionX += blockWidth;
     }
     positionY += blockHeight;

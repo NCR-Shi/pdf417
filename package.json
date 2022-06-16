@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git@github.com:NCR-Shi/pdf417.git"
   },
-  "main": "/build/index.js",
+  "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
